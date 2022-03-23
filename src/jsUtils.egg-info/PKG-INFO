@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jsUtils
+Version: 0.0.1
+Summary: My toolbox of useful snippets and utilities.
+Home-page: git@github.com:jabekengineer/jsUtils.git
+Author: Jason Sebek
+Author-email: jabekengineer@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, git@github.com:jabekengineer/jsUtils.git
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Windows
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+UNKNOWN
+

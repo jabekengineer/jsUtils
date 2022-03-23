@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/DFToXL/__init__.py
+src/Dir/FileNameUniqueInDirectory.py
+src/Dir/__init__.py
+src/jsUtils.egg-info/PKG-INFO
+src/jsUtils.egg-info/SOURCES.txt
+src/jsUtils.egg-info/dependency_links.txt
+src/jsUtils.egg-info/top_level.txt
