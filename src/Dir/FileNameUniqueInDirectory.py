@@ -1,26 +1,6 @@
 import os
 import argparse
 
-Parser = argparse.ArgumentParser(description="Check that file name is unique in Directory")
-Parser.add_argument("-FileName", 
-                    help="File name with extension",
-                    dest="FileName",
-                    type=str,
-                    required=True)
-Parser.add_argument("-DirName",
-                    help="Directory you want to check", 
-                    dest="DirName",
-                    type=str,
-                    required=True)
-Parser.add_argument("-ListFiles", 
-                    help="List files in specified directory", 
-                    dest="ListFiles",
-                    type=bool, 
-                    required=False)
-
-Args = Parser.parse_args()
-
-
 def Main() -> bool:
     # List all files in a directory using scandir()
     if(Args.FileName is not None and Args.DirName is not None):
@@ -39,5 +19,23 @@ def Main() -> bool:
                     print(entry.name, os.linesep)
     return output
 if __name__ == "__main__":
+    Parser = argparse.ArgumentParser(description="Check that file name is unique in Directory")
+    Parser.add_argument("-FileName", 
+                        help="File name with extension",
+                        dest="FileName",
+                        type=str,
+                        required=True)
+    Parser.add_argument("-DirName",
+                        help="Directory you want to check", 
+                        dest="DirName",
+                        type=str,
+                        required=True)
+    Parser.add_argument("-ListFiles", 
+                        help="List files in specified directory", 
+                        dest="ListFiles",
+                        type=bool, 
+                        required=False)
+
+    Args = Parser.parse_args()
     flag = Main()
     print(flag)
